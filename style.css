@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: space-around;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+}
+
+nav {
+    padding: 0 5px 10px 5px;
+    border-bottom: 1px solid hsl(0deg 0% 0% / 0.2);
+    /* margin-bottom: 150px; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #3E0A4E;
+}
+
+.logo {
+
+    margin-right: auto;
+}
+
+nav .links button {
+    border: none;
+    background-color: #3E0A4E;
+    color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    flex: 1;
+    height: 405px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content{
+    width: 600px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .photo {
+    width: 608px;
+}
+
+.container h1 {
+    font-size: 120px;
+    font-weight: 700;
+    background: linear-gradient(108deg, #6748BC 13.81%, #290664 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 80%;
+}
+
+.container .ideas {
+    background: linear-gradient(99deg, #B5437B 13.81%, #de5c9b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Dongle;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+}
+
+.container h1 .life {
+    background: linear-gradient(99deg, #B5437B 13.81%, #6748BC 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Dongle;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+}
+
+.container p {
+    font-size: 25px;
+}
+
+.container button {
+    width: 311px;
+height: 53.54px;
+    border: none;
+    background-color: #00C9A7;
+    width: 311px;
+    height: 53.891px;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
