@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
 
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 16px;
-    justify-content: space-around;
 }
 
 * {
@@ -14,8 +11,9 @@ body {
     font-family: 'Dongle', sans-serif;
 }
 
+/* Navbar section */
 nav {
-    padding: 0 5px 10px 5px;
+    padding: 10px;
     border-bottom: 1px solid hsl(0deg 0% 0% / 0.2);
 }
 
@@ -24,7 +22,6 @@ nav ul {
     display: flex;
     gap: 32px;
     align-items: center;
-
 }
 
 nav ul a {
@@ -41,31 +38,34 @@ nav ul a {
 nav .links button {
     border: none;
     background-color: #3E0A4E;
-    color: white;
+    color: #F5F7FA;
     font-size: 24px;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.container {
+/* Header */
+.header {
     flex: 1;
     display: flex;
     justify-content: center;
     gap: 32px;
     align-items: center;
     flex-wrap: wrap;
+    margin: 150px 0;
 }
-.content{
+
+.content {
     width: 600px;
     height: inherit;
     display: flex;
     flex-direction: column;
-   gap: 10px;
+    gap: 10px;
 }
 
 
-.container h1 {
+.header h1 {
     font-size: 120px;
     font-weight: 700;
     background: linear-gradient(108deg, #6748BC 13.81%, #290664 100%);
@@ -75,7 +75,7 @@ nav .links button {
     line-height: 80%;
 }
 
-.container .ideas {
+.header .ideas {
     background: linear-gradient(99deg, #B5437B 13.81%, #de5c9b 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -85,7 +85,7 @@ nav .links button {
     line-height: 90%;
 }
 
-.container h1 .life {
+.header h1 .life {
     background: linear-gradient(99deg, #B5437B 13.81%, #6748BC 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -97,18 +97,151 @@ nav .links button {
     line-height: 90%;
 }
 
-.container p {
+.header p {
     font-size: 25px;
 }
 
-.container button {
+.header button {
     border: none;
     background-color: #00C9A7;
     width: 311px;
     height: 53.891px;
     border-radius: 10px;
-    color: white;
+    color: #F5F7FA;
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
+}
+
+/* Team section */
+.team-section {
+    height: 840px;
+    background: #8A6FC4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.content-team {
+    text-align: center;
+    width: 576px;
+    margin-bottom: 70px;
+}
+
+.content-team h2 {
+    font-size: 70px;
+    color: #F5F7FA;
+}
+
+.content-team p {
+    font-size: 25px;
+}
+
+.team-photo {
+    width: 927px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.team-photo img {
+    height: 217px;
+    border-radius: 10px;
+    border: 5px solid #FBDAFF;
+    padding: 0 10px;
+}
+
+.team-photo p {
+    text-align: center;
+    color: #FBDAFF;
+    font-size: 25px;
+}
+
+/* Feedback section */
+.feedback {
+    align-self: center;
+    background-color: #00C9A7;
+    border-radius: 10px;
+    width: 988px;
+    height: 483px;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-top: -10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feedback .client-feedback {
+    width: 850px;
+    font-size: 40px;
+    color: #F5F7FA;
+    text-align: center;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-info p {
+    font-size: 30px;
+    color: #3E0A4E;
+}
+
+/* Contact section */
+.contact-section {
+    margin: 150px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px; 
+}
+
+.contact-section .content {
+    width: 1256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-section  img{
+    width: 303px;
+    height: 302px;
+}
+.contact-section .content h2 {
+    width: 855px;
+    font-family: Dongle;
+    font-size: 100px;
+    background: linear-gradient(151deg, #8A6FC4 10%, #3E0A4E 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-section button {
+    width: 332px;
+    height: 60px;
+    background-color: #00C9A7;
+    color: #F5F7FA;
+    border: none;
+    font-size: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #A8A3A3;
+    color: #3E0A4E;
+    height: 158px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
